@@ -2,7 +2,6 @@ import os
 
 # Force Hugging Face libraries to work offline.
 # The embedding model must already exist in the local cache.
-os.environ["HF_HUB_OFFLINE"] = "1"
 
 from functools import lru_cache
 
@@ -19,10 +18,7 @@ EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 def get_embeddings():
 
     return HuggingFaceEmbeddings(
-        model_name=EMBEDDING_MODEL,
-        model_kwargs={
-            "local_files_only": True
-        }
+        model_name=EMBEDDING_MODEL
     )
 
 
