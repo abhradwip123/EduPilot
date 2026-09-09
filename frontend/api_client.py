@@ -15,12 +15,22 @@ IMPORTANT:
 """
 
 import os
+import streamlit as st
 import requests
 
-# Prefer an environment variable so the URL can be changed without
-# touching code (e.g. when deploying, or running the backend on a
-# different port). Falls back to the documented default.
-API_URL = os.environ.get("EDUPILOT_API_URL", "http://127.0.0.1:8000").rstrip("/")
+
+def get_api_url():
+
+    if os.environ.get("EDUPILOT_API_URL"):
+        return os.environ["EDUPILOT_API_URL"].rstrip("/")
+
+    try:
+        return st.secrets["EDUPILOT_API_URL"].rstrip("/")
+    except Exception:
+        return "http://127.0.0.1:8000"
+
+
+API_URL = get_api_url()
 
 TIMEOUT_SECONDS = 120
 
