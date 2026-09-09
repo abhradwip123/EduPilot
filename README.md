@@ -172,3 +172,29 @@ Teach Again  Next Topic  Teacher Review
                |
                v
       AI Teacher Recommendation
+
+## Runnable Version
+
+EduPilot is provided as a runnable application through this GitHub repository.
+
+### Steps to Run
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/abhradwip123/EduPilot
+cd EduPilot
+
+## Running the Application
+
+EduPilot has two components:
+
+- **FastAPI Backend:** `http://127.0.0.1:8000`
+- **Streamlit Frontend:** `http://localhost:8501`
+
+### 1. Start the Backend
+
+From the project root:
+
+```powershell
+uvicorn backend.main:app --reload
