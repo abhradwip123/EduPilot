@@ -1,0 +1,152 @@
+[
+  {
+    "id": "Q001",
+    "subject": "DBMS",
+    "topic": "ER Model",
+    "subtopic": "Entities and Attributes",
+    "difficulty": "easy",
+    "question": "What is an entity in a database?",
+    "options": [
+      "A real-world object that can be identified",
+      "A database table only",
+      "A SQL command",
+      "A database password"
+    ],
+    "answer": "A real-world object that can be identified"
+  },
+  {
+    "id": "Q002",
+    "subject": "DBMS",
+    "topic": "ER Model",
+    "subtopic": "Relationships",
+    "difficulty": "medium",
+    "question": "What does a relationship represent in an ER model?",
+    "options": [
+      "Connection between entities",
+      "A database password",
+      "A SQL query",
+      "A database file"
+    ],
+    "answer": "Connection between entities"
+  },
+  {
+    "id": "Q003",
+    "subject": "DBMS",
+    "topic": "SQL",
+    "subtopic": "SELECT",
+    "difficulty": "easy",
+    "question": "Which SQL command is used to retrieve data?",
+    "options": [
+      "SELECT",
+      "DELETE",
+      "DROP",
+      "UPDATE"
+    ],
+    "answer": "SELECT"
+  },
+  {
+    "id": "Q004",
+    "subject": "DBMS",
+    "topic": "SQL",
+    "subtopic": "JOIN",
+    "difficulty": "medium",
+    "question": "Which JOIN returns matching rows from both tables?",
+    "options": [
+      "INNER JOIN",
+      "LEFT JOIN",
+      "RIGHT JOIN",
+      "FULL JOIN"
+    ],
+    "answer": "INNER JOIN"
+  },
+  {
+    "id": "Q005",
+    "subject": "DBMS",
+    "topic": "SQL",
+    "subtopic": "GROUP BY",
+    "difficulty": "medium",
+    "question": "Which SQL clause is used to group rows with the same values?",
+    "options": [
+      "GROUP BY",
+      "ORDER BY",
+      "WHERE",
+      "HAVING"
+    ],
+    "answer": "GROUP BY"
+  },
+  {
+    "id": "Q006",
+    "subject": "DBMS",
+    "topic": "Normalization",
+    "subtopic": "1NF",
+    "difficulty": "easy",
+    "question": "Which normal form requires atomic values?",
+    "options": [
+      "1NF",
+      "2NF",
+      "3NF",
+      "BCNF"
+    ],
+    "answer": "1NF"
+  },
+  {
+    "id": "Q007",
+    "subject": "DBMS",
+    "topic": "Normalization",
+    "subtopic": "2NF",
+    "difficulty": "medium",
+    "question": "2NF mainly removes which type of dependency?",
+    "options": [
+      "Partial dependency",
+      "Transitive dependency",
+      "Multivalued dependency",
+      "No dependency"
+    ],
+    "answer": "Partial dependency"
+  },
+  {
+    "id": "Q008",
+    "subject": "DBMS",
+    "topic": "Normalization",
+    "subtopic": "3NF",
+    "difficulty": "medium",
+    "question": "3NF mainly removes which type of dependency?",
+    "options": [
+      "Transitive dependency",
+      "Partial dependency",
+      "Functional dependency",
+      "Candidate dependency"
+    ],
+    "answer": "Transitive dependency"
+  },
+  {
+    "id": "Q009",
+    "subject": "DBMS",
+    "topic": "Transactions",
+    "subtopic": "ACID",
+    "difficulty": "easy",
+    "question": "What does the A in ACID stand for?",
+    "options": [
+      "Atomicity",
+      "Availability",
+      "Accuracy",
+      "Authorization"
+    ],
+    "answer": "Atomicity"
+  },
+  {
+    "id": "Q010",
+    "subject": "DBMS",
+    "topic": "Transactions",
+    "subtopic": "ACID",
+    "difficulty": "medium",
+    "question": "Which ACID property ensures committed data survives a system failure?",
+    "options": [
+      "Durability",
+      "Atomicity",
+      "Consistency",
+      "Isolation"
+    ],
+    "answer": "Durability"
+  }
+]
