@@ -1,22 +1,21 @@
 from fastapi import FastAPI
 
-from backend.routes import assessment
-from backend.routes import learning
+from backend.routes.assessment import router as assessment_router
+from backend.routes.learning import router as learning_router
+
 
 
 app = FastAPI(
-    title="EduPilot API",
-    description="Agentic AI Personalized Learning System",
-    version="1.0.0"
+    title="EduPilot API"
 )
 
 
 app.include_router(
-    assessment.router
+    assessment_router
 )
 
 app.include_router(
-    learning.router
+    learning_router
 )
 
 
