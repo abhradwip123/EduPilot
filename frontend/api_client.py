@@ -19,17 +19,14 @@ import streamlit as st
 import requests
 
 
-def get_api_url():
-    try:
-        return st.secrets["EDUPILOT_API_URL"].rstrip("/")
-    except Exception:
-        return os.environ.get(
-            "EDUPILOT_API_URL",
-            "http://127.0.0.1:8000"
-        ).rstrip("/")
+try:
+    API_URL = st.secrets["EDUPILOT_API_URL"].rstrip("/")
+except Exception:
+    API_URL = os.environ.get(
+        "EDUPILOT_API_URL",
+        "http://127.0.0.1:8000"
+    ).rstrip("/")
 
-
-API_URL = get_api_url()
 
 TIMEOUT_SECONDS = 120
 
