@@ -20,14 +20,13 @@ import requests
 
 
 def get_api_url():
-
-    if os.environ.get("EDUPILOT_API_URL"):
-        return os.environ["EDUPILOT_API_URL"].rstrip("/")
-
     try:
         return st.secrets["EDUPILOT_API_URL"].rstrip("/")
     except Exception:
-        return "http://127.0.0.1:8000"
+        return os.environ.get(
+            "EDUPILOT_API_URL",
+            "http://127.0.0.1:8000"
+        ).rstrip("/")
 
 
 API_URL = get_api_url()
