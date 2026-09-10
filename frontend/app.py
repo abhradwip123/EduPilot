@@ -97,6 +97,15 @@ st.markdown(
 # --------------------------------------------------
 
 init_session_state()
+import api_client
+
+st.sidebar.write(
+    "Backend URL:"
+)
+
+st.sidebar.code(
+    api_client.API_URL
+)
 
 
 # --------------------------------------------------
