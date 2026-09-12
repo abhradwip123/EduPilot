@@ -1,6 +1,5 @@
 import streamlit as st
 
-import requests
 from state import (
     PAGE_TEACHER,
     init_session_state,
@@ -24,6 +23,8 @@ from views import (
     adaptive_result,
     teacher,
 )
+
+import api_client
 
 
 st.set_page_config(
@@ -99,30 +100,6 @@ st.markdown(
 init_session_state()
 
 import api_client
-
-st.sidebar.write(
-    "Backend URL:"
-)
-
-st.sidebar.code(
-    api_client.API_URL
-)
-
-try:
-    test_response = requests.get(
-        f"{api_client.API_URL}/",
-        timeout=30,
-    )
-
-    st.sidebar.write(
-        f"Backend test status: {test_response.status_code}"
-    )
-
-except Exception as exc:
-
-    st.sidebar.error(
-        f"Backend test failed: {exc}"
-    )
 
 
 # --------------------------------------------------
